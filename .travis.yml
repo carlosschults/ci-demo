@@ -3,5 +3,8 @@ mono: none
 dotnet: 2.2.202
 dist: xenial
 
+before_install:
+  - chmod +x build/travis.sh
+  
 script:
   - build/travis.sh
