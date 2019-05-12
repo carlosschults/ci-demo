@@ -15,3 +15,4 @@ for i in /usr/share/dotnet/shared/Microsoft.NETCore.App/*; do ln -s $i $DOTNET_R
 dotnet --info
 
 dotnet build -c Release src/DemoConsoleApp
+dotnet test -c Release tests/DemoConsoleAppTest
